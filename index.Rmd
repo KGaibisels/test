@@ -1,0 +1,28 @@
+---
+title: "test markdown"
+author: "Katrina"
+date: "July 18, 2018"
+output: html_document
+---
+
+### Experimenting with RStudio markdown
+
+We can load our library and avoid showing the warning messages
+```{r warning=FALSE, message=FALSE}
+library(dplyr)
+```
+Here's a simple R chunk
+```{r}
+x<-2+2
+x
+```
+Without R code
+```{r echo=FALSE}
+x<-2+2
+x
+```
+
+```{r}
+plot(cars$speed,cars$dist)
+```
+
